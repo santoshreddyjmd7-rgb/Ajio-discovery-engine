@@ -37,9 +37,9 @@ function tagReview(text: string): string[] {
 
 export async function GET() {
   try {
-    const reviews = await gplay.reviews({
+    const reviews = await (gplay as any).reviews({
       appId: "com.ril.ajio",
-      sort: gplay.sort.NEWEST,
+      sort: (gplay as any).sort.NEWEST,
       num: 50,
     });
 
