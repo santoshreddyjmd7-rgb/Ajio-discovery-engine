@@ -56,6 +56,7 @@ TASK: Write 3 short, PM-facing insights (2-3 sentences each) that a wishlist-to-
         "Content-Type": "application/json",
         "x-api-key": apiKey,
         "anthropic-version": "2023-06-01",
+        "anthropic-workspace-id": "wrkspc_01DBWZnC_1iU8Cr3",
       },
       body: JSON.stringify({
         model: "claude-haiku-4-5-20251001",
