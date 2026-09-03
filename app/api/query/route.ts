@@ -59,7 +59,6 @@ QUESTION: ${question}`;
         "Content-Type": "application/json",
         "x-api-key": apiKey,
         "anthropic-version": "2023-06-01",
-        "anthropic-workspace-id": "wrkspc_01DBWZnC_1iU8Cr3",
       },
       body: JSON.stringify({
         model: "claude-haiku-4-5-20251001",
