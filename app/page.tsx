@@ -180,7 +180,7 @@ export default function Home() {
 
       <Section title="Pipeline & guardrails">
         <ol style={{ paddingLeft: 18, fontSize: 14, lineHeight: 1.9, color: "#333" }}>
-          <li><b>Ingest</b> — 45 reviews collected from Play Store, App Store, Reddit, Trustpilot, PissedConsumer.</li>
+          <li><b>Ingest</b> — {summary.total} reviews collected across {Object.keys(summary.bySource).length} sources (Play Store, App Store, Reddit, Trustpilot, PissedConsumer, and others).</li>
           <li><b>Classify</b> — each review hand-tagged against a closed 12-theme taxonomy (no LLM invents new tags).</li>
           <li><b>Aggregate</b> — theme frequency and cross-pattern counts computed in plain code, zero LLM involvement.</li>
           <li><b>Synthesize</b> — one Claude API call (Anthropic, Claude Haiku 4.5) reads only the aggregated counts + sample quotes, cites review IDs, states its own limitations.</li>
